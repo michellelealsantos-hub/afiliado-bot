@@ -1,4 +1,5 @@
-import { Client, LocalAuth } from 'whatsapp-web.js';
+import pkg from 'whatsapp-web.js';
+const { Client, LocalAuth } = pkg;
 import qrcode from 'qrcode';
 import path from 'path';
 import { fileURLToPath } from 'url';
@@ -190,3 +191,4 @@ export const getWhatsAppGroups = async (req, res) => {
 export const getClient = (userId) => {
   return clients[userId];
 };
+
